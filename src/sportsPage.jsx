@@ -7,6 +7,7 @@ import "./style/home2.css"
 import "./style/sportsP.css"
 import { Link} from "react-router-dom";
 import Footer from "./footer"
+import "./style/slide.css"
 import { AuthContext } from './context/authContext';
 
 const SportsPage = () => {
@@ -78,7 +79,8 @@ const SportsPage = () => {
     }
 
   return (
-    <div style={{  backgroundColor:"#2a2c42"}}>
+    <div style={{ backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"
+}}>
         <div className="sportPa">
         <div>
           <img src="/img/earnarsBanner34.png" className="AffliateBanner" alt=""/>
@@ -87,17 +89,23 @@ const SportsPage = () => {
         Making Money Daily on <span className="forexy">SPORTS</span> trading is as easy as following our daily expert predictions
         </div>
         
-       <div className="NowUpSign"> <Link to="/login" className="ifi"> SIGN UP NOW</Link></div>
-        <p className="SportBetting">What Is Sport Betting</p>
+        <Link to="/login" className="ifi"><div className="NowUpSign">  SIGN UP NOW</div></Link>
+        <div style={{padding:"0px 12px"}}>
+        <p className="SportBetting">What Is Sports Betting</p>
         <div className="outcomeBeen1">
-        <div className="outcomeBeen">
-        <span className="forexy"> Sports </span>betting is the activity of predicting sports results and placing a wager on the outcome.  <span className="forexy">Sport </span>betting is legally recognized across the world and has actually been an alternative source of income for millions of sport fans across the world.  
+        <div className="outcomeBeen" style={{ 
+      backgroundImage: `url("/img/sample.png")`
+,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+        <span className="forexy1"> Sports </span>betting is the activity of predicting sports results and placing a wager on the outcome.  <span className="forexy1">Sport </span>betting is legally recognized across the world and has actually been an alternative source of income for millions of sport fans across the world.  
         </div>
         </div>
+        </div>
+        <div style={{padding:"0px 12px"}}>
         <p className="WhyStart">Why Start Sport Betting</p>
         <div className="ifNi"></div>
-        <div className="EasyTi">
-            <div className="EasyTim">
+        <div className="EasyTi" >
+            <div className="EasyTim" style={{ 
+      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Easy to Get Started</p>
@@ -115,7 +123,8 @@ or financial commitment
 before you begin staking.
 With $1 dollar or ₦500 naira you can start staking. You also have the chance to bet with the same amount from time to time.</div>
             </div>
-            <div className="EasyTim">
+            <div className="EasyTim" style={{ 
+      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Alternative Source of Income</p>
@@ -124,7 +133,8 @@ With $1 dollar or ₦500 naira you can start staking. You also have the chance t
 
 </div>
             </div>
-            <div className="EasyTim">
+            <div className="EasyTim" style={{ 
+      background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
               <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Convinience & non stop</p>
@@ -138,6 +148,7 @@ day. But with sports betting, it is an affordable hobby that you can play or wat
 You can also enjoy sports betting anywhere and anytime e.g from the comfort of your home or at any betting shop near you.</div>
             </div>
         </div>
+        </div>
 
         <div className="AgenciesTy">Sports Betting Agencies</div>
         <div className="ifNi"></div>
@@ -147,14 +158,44 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
 
        
 
-<div className="SportsImg1">
-   <div className="SportsImg">
+<div className="slider">
+   <div className="slide-track">
+    <div className="slide">
    <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
    <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
    <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
    <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
    <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
    <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+    <div className="slide">
+   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div>
+   <img src="/img/bett.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
+   <img src="/img/Betway.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
+   <img src="/img/kingK.png" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
+   <img src="/img/betKing.svg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
+   <img src="/img/images.jpg" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
    </div>
 </div>
 
@@ -164,7 +205,8 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
 
 
         <div className="BettingTu">Sport Betting Tutorial Videos</div>
-        <div className="firey">
+        <div className='figma'>
+        <div className="firey how">
             <div className="firey1">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QLfYPHSCATU" title="SPORTYBET TUTORIAL: HOW TO SIGN UP AND LOGIN TO YOUR SPORTYBET ACCOUNT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -175,6 +217,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/38TXXWrUrdQ" title="Sportybet Tips - How To Place Bets On Sportybet | Bet unlocked" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
+        </div>
 
         <div>
           <div id="Faqc" className="faqSportMa">
@@ -182,7 +225,7 @@ You can also enjoy sports betting anywhere and anytime e.g from the comfort of y
             <div>
               <div className="HowFarBro" onClick={drup}>
                 <span>How do I register  with a broker?</span>{" "}
-                <span>
+                <span className="IconSpace">
                 {show? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -198,7 +241,7 @@ with more than one broker.
             <div>
               <div className="HowFarBro" onClick={drup1}>
                 <span>I dont Know anything about betting,What should I do?</span>
-                <span>
+                <span className="IconSpace">
                 {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -213,7 +256,7 @@ with more than one broker.
             <div>
               <div className="HowFarBro" onClick={drup2}>
                 <span> How can I fund my account?</span>
-                <span>
+                <span className="IconSpace">
                   {show2? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -228,7 +271,7 @@ with more than one broker.
             <div>
               <div className="HowFarBro" onClick={drup3}>
                 <span> Can your company bet for me and pay me percentage monthly? </span>
-                <span>
+                <span className="IconSpace">
                   {show3? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -244,7 +287,7 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
             <div>
               <div className="HowFarBro" onClick={drup4}>
                 <span>How much do I bet in every game?</span>
-                <span>
+                <span className="IconSpace">
                   {show4? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -259,7 +302,7 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
             <div>
               <div className="HowFarBro" onClick={drup5}>
                 <span> What is the guarantee am going to make money betting?</span>
-                <span>
+                <span className="IconSpace">
                   {show5? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>

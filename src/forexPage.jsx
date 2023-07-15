@@ -5,6 +5,8 @@ import {  faPlus,faMinus} from '@fortawesome/free-solid-svg-icons'
 import "./style/home.css";
 import "./style/home2.css"
 import "./style/sportsP.css"
+import "./style/slide.css"
+
 import { Link} from "react-router-dom";
 import Footer from "./footer"
 import { AuthContext } from './context/authContext';
@@ -18,7 +20,7 @@ const ForexPage = () => {
     const [show3,setShow3]= useState(false)
     const [show4,setShow4]= useState(false)
     const [show5,setShow5]= useState(false)
-    const [show6,setShow6]= useState(false)
+  
     const {currentUser} = useContext(AuthContext);
 
   const drop=()=>{
@@ -75,32 +77,38 @@ const ForexPage = () => {
   }
  
   return (
-    <div style={{  backgroundColor:"#2a2c42"}}>
+    <div style={{ backgroundImage: "linear-gradient(to right, rgba(106, 116, 167, 0.34), rgba(119, 135, 182, 0.95))"
+}} >
         <div className="sportPa">
         <div>
-          <img src="/img/earnarsBanner45.png" className="AffliateBanner" alt=""/>
+          <img src="/img/earnarsBanner45.png" className="AffliateBanner" alt="Affliate Banner"/>
           </div>
           
         <div className="MakingMoney">
         Making Money Daily on <span className="forexy">FOREX</span> trading is as easy as following our daily expert forecast.
         </div>
         
-       <div className="NowUpSign"> <Link to="/login" className="ifi">SIGN UP NOW</Link>
-      </div>
-        <p className="SportBetting">What Is FOREX Trading</p>
+      <Link to="/login" className="ifi"> <div className="NowUpSign"> SIGN UP NOW
+      </div></Link>
+        <div style={{padding:"0px 12px"}} >
+        <p className="SportBetting">What Is Forex Trading</p>
         <div className="outcomeBeen1">
-        <div className="outcomeBeen">
-       <span className="forexy"> Forex </span>trading or FX trading (also known as foreign exchange) happens 
+        <div className="outcomeBeen" style={{ 
+      backgroundImage: `url("/img/sample.png")`,backgroundPosition:"left right bottom top",backgroundRepeat:"no-repeat",padding:"18px 15px",backgroundSize:"cover"}}>
+       <span className="forexy1"> Forex </span>trading or FX trading (also known as foreign exchange) happens 
 when you buy or sell one countries currencies against another 
 (e.g GBP/USD) with the aim of making a profit from the changing 
-value of the underlying asset. <span className="forexy">Forex</span> markets is the largest and most 
+value of the underlying asset. <span className="forexy1">Forex</span> markets is the largest and most 
 liquid asset markets in the world.   
         </div>
         </div>
+        </div>
+        <div style={{padding:"0px 12px"}}>
         <p className="WhyStart">Why Start Forex Trading</p>
         <div className="ifNi"></div>
         <div className="EasyTi">
-            <div className="EasyTim">
+            <div className="EasyTim" style={{ 
+ background:"linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Low Barriers to Entry</p>
@@ -120,7 +128,8 @@ We are here to help you start
 making money online by just 
 following our expert forecast.</div>
             </div>
-            <div className="EasyTim">
+            <div className="EasyTim" style={{ 
+background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">A 24-hours market</p>
@@ -143,7 +152,8 @@ sleep.
 
 </div>
             </div>
-            <div className="EasyTim">
+            <div className="EasyTim" style={{ 
+     background: "linear-gradient(206deg, rgb(51 50 85) 31%, rgb(50 49 90 / 54%) 62%, rgb(53 56 92 / 44%) 76%)",backgroundPosition:"center center",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <div className="onV">
             <img src="/img/icinC1.svg" alt="every source of fund" className="everyday"/>
                 <p className="startedf">Leverage</p>
@@ -170,6 +180,7 @@ management, this high degree
  losses as well as gains.</div>
             </div>
         </div>
+        </div>
 
         <div className="AgenciesTy">Who  Are Forex Brokers</div>
         <div className="ifNi"></div>
@@ -179,23 +190,56 @@ management, this high degree
 
   
 
-
-<div className="SportsImg1">
-   <div className="SportsImg">
-   <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+<div className="slider">
+<div className="slide-track">
+   <div className="slide">
+    <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+  
+    </div>
+     <div className="slide">
    <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+   </div>
+    <div className="slide">
    <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
-   <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+   <div className="slide">
+    <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+   
+   </div>
+    <div className="slide">
    <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+   </div>
+    <div className="slide">
    <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
    </div>
+       <div className="slide">
+   <img src="/img/oct.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+           <img src="/img/fbs.svg" alt="" title="" className="marqueelogo" style={{width: "60px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/ex.svg" alt="" title="" className="marqueelogo" style={{width: "180px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+   <img src="/img/apari.png" alt="" title="" className="marqueelogo" style={{width: "160px", maxWidth:"none"}}/>
+   </div>
+       <div className="slide">
+         <img src="/img/fxtm.svg" alt="" title="" className="marqueelogo" style={{width: "170px", maxWidth:"none"}}/>
+
+   </div>
+       <div className="slide">
+   <img src="/img/hfm.svg" alt="" title="" className="marqueelogo" style={{width: "110px", maxWidth:"none"}}/>
+   </div>
+ 
+</div>
 </div>
 
 
 
         <div className="BettingTu">Forex Trading Tutorial Videos</div>
-       
-        <div className="firey">
+       <div className="figma">
+        <div className="firey how">
             <div className="firey1">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IUL29Vh6rF8" title="[ENGLISH] Tutorial - How to start trading with OctaTrader on your Android device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -206,6 +250,7 @@ management, this high degree
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TgyisJAsGvE" title="How to make a deposit with Instant Bank Transfers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
+        </div>
 
         <div>
           <div id="Faqc" className="faqSportMa">
@@ -214,7 +259,7 @@ management, this high degree
               <div className="HowFarBro" onClick={drop}>
                 <span>
 How do I register  with a broker?</span>{" "}
-                <span>
+                <span className="IconSpace">
                 {show? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -230,7 +275,7 @@ How do I register  with a broker?</span>{" "}
             <div>
               <div className="HowFarBro" onClick={drop1}>
                 <span>I dont Know anything about Forex trading,What should i do?</span>
-                <span>
+                <span className="IconSpace">
                 {show1? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -245,7 +290,7 @@ How do I register  with a broker?</span>{" "}
             <div>
               <div className="HowFarBro" onClick={drop2}>
                 <span>How can i fund my account? </span>
-                <span>
+                <span className="IconSpace">
                   {show2? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -260,7 +305,7 @@ How do I register  with a broker?</span>{" "}
             <div>
               <div className="HowFarBro" onClick={drop3}>
                 <span> Can your company Trade for me and pay me a percentage monthly? </span>
-                <span>
+                <span className="IconSpace">
                   {show3? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -275,7 +320,7 @@ How do I register  with a broker?</span>{" "}
             <div>
               <div className="HowFarBro" onClick={drop4}>
                 <span>How much do i stake in every trade? </span>
-                <span>
+                <span className="IconSpace">
                   {show4? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
@@ -288,9 +333,9 @@ How do I register  with a broker?</span>{" "}
               )}
             </div>
             <div>
-              <div className="HowFarBro" onClick={show5}>
+              <div className="HowFarBro" onClick={drop5}>
                 <span>What is the guarantee am going to make money trading forex? </span>
-                <span>
+                <span className="IconSpace">
                   {show5? <FontAwesomeIcon icon={faMinus} className="PlusIcon" />:<FontAwesomeIcon icon={faPlus} className="PlusIcon" />}
                 </span>
               </div>
